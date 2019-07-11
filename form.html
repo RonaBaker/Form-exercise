@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form submition</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="form.css" rel="styleSheet"/>
+</head>
+
+<body>
+    <form  class = "submition-form" method="get">
+        <h1>Form Submition</h1>
+        <div>
+            <label class="submition-form__name-label" for="name">Name </label>
+            <input class="submition-form__input" id="name" name="name" type="text" autocomplete="off">
+            <div class="submition-form__error-name-input" id="nameError"></div>
+        </div>
+        <div>
+            <label class="submition-form__address-label" for="address">Address </label>
+            <input class="submition-form__input" id="address" type="text" name="Address" autocomplete="off">
+            <div class="submition-form__error-address-input" id="addressError"></div>
+        </div>
+        <input class = "submition-form__submit-button" type="button" onclick="validateForm()" value="Submit">
+    </form>
+    <script src="form.js"></script>
+</body>
+
+</html>
